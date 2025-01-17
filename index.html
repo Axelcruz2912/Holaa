@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Personal</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #004aad, #1f1f1f);
+            color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, rgba(0, 74, 173, 0.9), rgba(0, 0, 0, 0.6));
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin-top: 10px;
+            color: #cce7ff;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #cce7ff;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skills li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .skills li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .skills li::before {
+            content: "★";
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+            color: #bbb;
+        }
+
+        /* Links */
+        a {
+            color: #00d8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add transitions for hover effects */
+        a, li {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Axel Joaquín Cruz Jerónimo</h1>
+        <p>Estudiante de la Universidad Tecnológica del Valle de Toluca</p>
+    </header>
+
+    <section>
+        <h2>Sobre mí</h2>
+        <p>
+            ¡Bienvenido a mi página personal! 
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML y CSS</li>
+            <li>Laravel</li>
+            <li>Python</li>
+            <li>Git y GitHub</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Axel Joaquín Cruz Jerónimo | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
